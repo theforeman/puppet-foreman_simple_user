@@ -1,0 +1,84 @@
+{
+  "name": "ekohl-foreman_simple_user",
+  "version": "0.1.0",
+  "author": "ekohl",
+  "summary": "Ensure the host owner in The Foreman exists with SSH keys",
+  "license": "Apache-2.0",
+  "source": "git://github.com/ekohl/puppet-foreman_simple_user",
+  "project_page": "https://github.com/ekohl/puppet-foreman_simple_user",
+  "issues_url": "https://github.com/ekohl/puppet-foreman_simple_user/issues",
+  "description": "Module for creating users that are the host owner in The Foreman",
+  "tags": [
+    "foreman",
+    "user"
+  ],
+  "dependencies": [],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.0.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "25"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "FreeBSD",
+      "operatingsystemrelease": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "operatingsystem": "Archlinux"
+    },
+    {
+      "operatingsystem": "DragonFly",
+      "operatingsystemrelease": [
+        "3.6",
+        "3.8",
+        "4"
+      ]
+    }
+  ]
+}

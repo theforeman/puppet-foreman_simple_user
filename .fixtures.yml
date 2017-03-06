@@ -1,0 +1,3 @@
+fixtures:
+  symlinks:
+    foreman_simple_user: "#{source_dir}"
