@@ -14,7 +14,7 @@ describe 'foreman_simple_user' do
       {
         'users' => {
           'admin' => {
-            'authorized_keys' => [
+            'ssh_authorized_keys' => [
               {
                 'key'     => 'AAA..BBB',
                 'comment' => 'My First Key',
@@ -32,7 +32,7 @@ describe 'foreman_simple_user' do
         .with_username('admin')
         .with_home('/home/admin')
         .with_password(nil)
-        .with_authorized_keys([{'comment' => 'My First Key', 'key' => 'AAA..BBB'}])
+        .with_ssh_authorized_keys([{'comment' => 'My First Key', 'key' => 'AAA..BBB'}])
     end
   end
 end

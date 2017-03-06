@@ -13,10 +13,10 @@ class foreman_simple_user (
 ) {
   $users.each |$username, $user| {
     foreman_simple_user::user { $username:
-      home            => $user['home'],
-      password        => $user['password'],
-      comment         => $user['fullname'],
-      authorized_keys => $user['authorized_keys'],
+      home                => $user['home'],
+      password            => $user['password'],
+      comment             => $user['fullname'],
+      ssh_authorized_keys => $user['ssh_authorized_keys'],
     }
   }
 }
