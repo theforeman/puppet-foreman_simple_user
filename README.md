@@ -2,13 +2,15 @@
 
 # Foreman Simple User module for Puppet
 
-Every host in The Foreman has an owner. This can be a user or a group. This
-module enables you to ensure the user exists with their SSH keys. This makes it
-easy to get your infrastructure up and running with centralized logins like
-LDAP.
+Every host in The Foreman has an owner which is either a user or a group. This
+module enables you to ensure the user exists with their SSH keys. Old SSH keys
+are purged from managed users. This makes it easy to get your infrastructure up
+and running with centralized logins similar to LDAP.
 
-This requires use of the Foreman ENC and
-[#4290](https://github.com/theforeman/foreman/pull/4290).
+This requires use of the Foreman ENC and version 1.15+.
+
+**Note** this module doesn't purge old users. That means that changing owners
+only adds users.
 
 # Usage
 
