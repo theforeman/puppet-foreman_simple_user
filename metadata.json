@@ -4,7 +4,7 @@
   "author": "ekohl",
   "summary": "Ensure the host owner in The Foreman exists with SSH keys",
   "license": "Apache-2.0",
-  "source": "git://github.com/ekohl/puppet-foreman_simple_user",
+  "source": "https://github.com/ekohl/puppet-foreman_simple_user",
   "project_page": "https://github.com/ekohl/puppet-foreman_simple_user",
   "issues_url": "https://github.com/ekohl/puppet-foreman_simple_user/issues",
   "description": "Module for creating users that are the host owner in The Foreman",
@@ -16,7 +16,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.0.0 < 5.0.0"
+      "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -44,22 +44,23 @@
     {
       "operatingsystem": "Fedora",
       "operatingsystemrelease": [
-        "25"
+        "27",
+        "28"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "7",
-        "8"
+        "8",
+        "9"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "12.04",
         "14.04",
-        "16.04"
+        "16.04",
+        "18.04"
       ]
     },
     {

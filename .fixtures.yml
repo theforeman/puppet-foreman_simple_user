@@ -1,3 +1,5 @@
 fixtures:
-  symlinks:
-    foreman_simple_user: "#{source_dir}"
+  repositories:
+    sshkeys_core:
+      repo: "https://github.com/puppetlabs/puppetlabs-sshkeys_core"
+      puppet_version: ">= 6.0.0"
