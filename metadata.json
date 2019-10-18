@@ -44,15 +44,16 @@
     {
       "operatingsystem": "Fedora",
       "operatingsystemrelease": [
-        "27",
-        "28"
+        "29",
+        "30"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
         "8",
-        "9"
+        "9",
+        "10"
       ]
     },
     {
