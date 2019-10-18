@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/ekohl/puppet-foreman_simple_user.svg?branch=master)](https://travis-ci.org/ekohl/puppet-foreman_simple_user)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/theforeman/foreman_simple_user.svg)](https://forge.puppetlabs.com/theforeman/foreman_simple_user)
+[![Build Status](https://travis-ci.org/theforeman/puppet-foreman_simple_user.svg?branch=master)](https://travis-ci.org/theforeman/puppet-foreman_simple_user)
 
 # Foreman Simple User module for Puppet
 
@@ -16,7 +17,7 @@ only adds users.
 
 Include the top level `foreman_simple_user` class to create the users.
 
-    include ::foreman_simple_user
+    include foreman_simple_user
 
 # Contributing
 
