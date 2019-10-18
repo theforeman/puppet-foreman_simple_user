@@ -1,12 +1,10 @@
-# Ensure foreman users are present on the system
+# @summary Ensure foreman users are present on the system
 #
-# === Parameters:
+# @param users
+#   The hash of users
 #
-# $users:: The hash of users
-#
-# === Usage:
-#
-#   include ::foreman_simple_user
+# @example
+#   include foreman_simple_user
 #
 class foreman_simple_user (
   Hash[String, Hash] $users = $::foreman_users,

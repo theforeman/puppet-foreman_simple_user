@@ -1,23 +1,27 @@
-# Create a single foreman user
+# @summary Create a single foreman user
 #
-# === Parameters:
+# @param ensure
+#   The basic state that the user should be in.
 #
-# $ensure::          The basic state that the user should be in.
+# @param username
+#   The username
 #
-# $username::        The username
+# @param group
+#   The primary group of the user
 #
-# $group::           The primary group of the user
+# @param home
+#   The home directory of the user
 #
-# $home::            The home directory of the user
+# @param password
+#   An optional password for the user
 #
-# $password::        An optional password for the user
+# @param comment
+#   An optional comment about the user. Usually the full name.
 #
-# $comment::         An optional comment about the user. Usually the full name.
+# @param ssh_authorized_keys
+#   A list of authorized keys
 #
-# $ssh_authorized_keys:: A list of authorized keys
-#
-# === Usage:
-#
+# @example
 #   foreman_simple_user::user { 'admin':
 #     ssh_authorized_keys => [
 #       {
