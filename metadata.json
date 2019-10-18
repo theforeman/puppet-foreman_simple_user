@@ -1,12 +1,12 @@
 {
-  "name": "ekohl-foreman_simple_user",
+  "name": "theforeman-foreman_simple_user",
   "version": "0.1.0",
-  "author": "ekohl",
+  "author": "theforeman",
   "summary": "Ensure the host owner in The Foreman exists with SSH keys",
   "license": "Apache-2.0",
-  "source": "https://github.com/ekohl/puppet-foreman_simple_user",
-  "project_page": "https://github.com/ekohl/puppet-foreman_simple_user",
-  "issues_url": "https://github.com/ekohl/puppet-foreman_simple_user/issues",
+  "source": "https://github.com/theforeman/puppet-foreman_simple_user",
+  "project_page": "https://github.com/theforeman/puppet-foreman_simple_user",
+  "issues_url": "https://github.com/theforeman/puppet-foreman_simple_user/issues",
   "description": "Module for creating users that are the host owner in The Foreman",
   "tags": [
     "foreman",
