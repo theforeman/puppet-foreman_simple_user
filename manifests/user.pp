@@ -18,6 +18,9 @@
 # @param comment
 #   An optional comment about the user. Usually the full name.
 #
+# @param shell
+#   The default shell of the user
+#
 # @param ssh_authorized_keys
 #   A list of authorized keys
 #
@@ -36,9 +39,10 @@ define foreman_simple_user::user (
   Enum['present', 'absent', 'role'] $ensure              = 'present',
   String                            $username            = $title,
   String                            $group               = $title,
-  String                            $home                = "/home/${title}",
+  Stdlib::AbsolutePath              $home                = "/home/${title}",
   Optional[String]                  $comment             = undef,
   Optional[String]                  $password            = undef,
+  Stdlib::AbsolutePath              $shell               = '/bin/bash',
   Array[Hash]                       $ssh_authorized_keys = [],
 ) {
   user { $username:
@@ -48,6 +52,7 @@ define foreman_simple_user::user (
     managehome     => true,
     password       => $password,
     comment        => $comment,
+    shell          => $shell,
     purge_ssh_keys => true,
   }
 
